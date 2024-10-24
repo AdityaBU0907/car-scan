@@ -1,0 +1,159 @@
+/* Center the entire app content */
+.App {
+  display: flex; /* Use Flexbox layout */
+  flex-direction: row; /* Arrange items in a row */
+  background-color: #f0f2f5; /* Light background color */
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Style for headings */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333; /* Darker font color */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Style the form container */
+.form-container {
+  background-color: #ffffff; /* White form background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  margin-right: 30px; /* Space between form and database */
+  flex: 1; /* Take up half of the available width */
+  width: 40%;
+}
+
+
+/* Style input fields */
+input {
+  width: 70%; /* Make inputs take full width of the column */
+  padding: 10px;
+  margin: 10px 0; /* Margin between input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Style for the add button */
+button {
+  padding: 12px 20px;
+  background-color: #61dafb; /* Button color similar to App-link */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1; /* Darker shade on hover */
+}
+
+/* Style the database list container */
+.database-container {
+  background-color: #ffffff; /* White background */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+  flex: 1; /* Take up half of the available width */
+}
+
+/* Style the database list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; /* Reduced margin at the top */
+}
+
+/* Style individual list items */
+li {
+  background-color: #ffffff;
+  padding: 10px; /* Reduced padding inside list items */
+  margin: 5px 0; /* Reduced margin between list items */
+  border-radius: 5px; /* Slightly reduced border radius */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+  font-size: 1rem; /* Slightly reduced font size */
+}
+
+/* Style for the header */
+.App-header {
+  background-color: #282c34;
+  padding: 40px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+}
+/* Container for each item in the list */
+.list-item {
+  display: flex;  /* Use flexbox for layout */
+  justify-content: space-between;  /* Space between details and QR code */
+  align-items: flex-start;  /* Align items to the top */
+  margin: 10px 0;  /* Add some vertical spacing */
+  border: 1px solid #ccc;  /* Optional: add a border around each item */
+  padding: 10px;  /* Add some padding inside the item */
+  border-radius: 5px;  /* Optional: rounded corners */
+}
+
+/* Style for the details section */
+.item-details {
+  flex: 1;  /* Allow this to take remaining space */
+}
+
+/* Style for the QR code container */
+.qr-code-container {
+  margin-left: 20px;  /* Space between details and QR code */
+  display: flex;  /* Center the QR code vertically */
+  align-items: center;
+}
+
+/* QR code image styling */
+/* QR code image styling */
+.qr-code-image {
+  width: 200px;  /* Increased width for the QR code */
+  height: auto;  /* Maintain aspect ratio */
+  border: 1px solid #000;  /* Optional: add a border around QR code */
+  border-radius: 5px;  /* Optional: rounded corners */
+}
+.search-bar-container {
+  margin-bottom: 20px; /* Add space below the search bar */
+  padding: 10px; /* Padding for aesthetics */
+  background-color: #f9f9f9; /* Background color for visibility */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 5px; /* Space between input and button */
+  border: 1px solid #ccc; /* Border for input field */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.search-bar button {
+  padding: 8px 12px; /* Button padding */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer on hover */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
